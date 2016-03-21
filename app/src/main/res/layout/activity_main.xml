@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:padding="8dp"
+    tools:context="com.example.android.stpatrickspostcard.MainActivity">
+
+    <ImageView
+        android:id="@+id/beer_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:paddingTop="36dp"
+        android:src="@drawable/beer_c"/>
+
+    <ImageView
+        android:id="@+id/beer_run_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/beer_r"
+        android:layout_above="@+id/run_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:text="Happy St. Patrick's Day!"
+        android:id="@+id/happy" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:padding="8dp"
+        android:text="Let's run to the Pub!"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/run_text" />
+</RelativeLayout>
+
